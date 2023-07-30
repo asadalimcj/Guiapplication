@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{548771EE-6F5D-4311-9E57-44D93D090EE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GuiAplication</RootNamespace>
+    <AssemblyName>GuiAplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStation.Designer.cs">
+      <DependentUpon>AddStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bl\Manager.cs" />
+    <Compile Include="bl\orangeLine.cs" />
+    <Compile Include="bl\parentLog.cs" />
+    <Compile Include="bl\signIn.cs" />
+    <Compile Include="bl\signUp.cs" />
+    <Compile Include="bl\UpdateCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bl\UpdateCompanyInfo.Designer.cs">
+      <DependentUpon>UpdateCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bl\updateInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bl\updateInfo.Designer.cs">
+      <DependentUpon>updateInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bl\user.cs" />
+    <Compile Include="bookseat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookseat.Designer.cs">
+      <DependentUpon>bookseat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckFare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckFare.Designer.cs">
+      <DependentUpon>CheckFare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dl\adminDl.cs" />
+    <Compile Include="dl\ExtraDL.cs" />
+    <Compile Include="dl\loginDl.cs" />
+    <Compile Include="dl\userDl.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiveFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiveFeedback.Designer.cs">
+      <DependentUpon>GiveFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayBill.Designer.cs">
+      <DependentUpon>PayBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUP.Designer.cs">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFare.Designer.cs">
+      <DependentUpon>UpdateFare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="validation.cs" />
+    <Compile Include="ViewCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCompanyInfo.Designer.cs">
+      <DependentUpon>ViewCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFeedback.Designer.cs">
+      <DependentUpon>viewFeedback.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStation.resx">
+      <DependentUpon>AddStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bl\UpdateCompanyInfo.resx">
+      <DependentUpon>UpdateCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bl\updateInfo.resx">
+      <DependentUpon>updateInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookseat.resx">
+      <DependentUpon>bookseat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckFare.resx">
+      <DependentUpon>CheckFare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiveFeedback.resx">
+      <DependentUpon>GiveFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayBill.resx">
+      <DependentUpon>PayBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUP.resx">
+      <DependentUpon>SignUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFare.resx">
+      <DependentUpon>UpdateFare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCompanyInfo.resx">
+      <DependentUpon>ViewCompanyInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFeedback.resx">
+      <DependentUpon>viewFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backGround.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4426155_2466.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4426155_24661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trail.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
